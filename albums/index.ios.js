@@ -1,12 +1,10 @@
 // Import a library to create component
 import React from 'react';
-import ReactNative from 'react-native';
+import { Text, AppRegistry } from 'react-native';
 
 // create component
-const App = () => {
-    return (
+const App = () => (
         <Text> Some Text </Text>
-    )
-
-};
+    );
 //render it to device
+AppRegistry.registerComponent('albums', () => App);
